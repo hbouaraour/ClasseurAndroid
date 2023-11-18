@@ -1,5 +1,6 @@
 package fr.hamtec.helloandroidprogrammatique;
 
+import android.util.Log;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -12,8 +13,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate( Bundle savedInstanceState ) {
         super.onCreate( savedInstanceState );
-    
-    
+        
         RelativeLayout layout = new RelativeLayout( this );
         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams( ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT );
         layout.setLayoutParams( lp );
