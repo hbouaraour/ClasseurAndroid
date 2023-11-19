@@ -21,10 +21,12 @@ public class SecondActivity extends AppCompatActivity {
         btn_1 = findViewById( R.id.button1 );
         
         btn_1.setOnClickListener( arg0 -> {
-            String message = editText1.getText( ).toString( );
+            String message = String.valueOf( editText1.getText( ) );
+            //String message = editText1.getText( ).toString( );
             Intent intent = new Intent( );
             intent.putExtra( "MESSAGE", message );
-            setResult( 2, intent );
+            setResult( RESULT_OK, intent );
+            //setResult( 2, intent );
             finish( );  //finishing activity
         } );
     }

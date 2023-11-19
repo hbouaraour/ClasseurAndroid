@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
     //? Méthode de rappel pour obtenir le message d'une autre activité
     @Override
     protected void onActivityResult( int requestCode, int resultCode, Intent data ) {
-        
-        Log.d( TAG, "onActivityResult: requestCode = " + requestCode + " resultCode = " + resultCode );
+        Log.d( TAG, "protected void onActivityResult (int requestCode, int resultCode, Intent data)" );
+        Log.d( TAG, "onActivityResult: requestCode = " + requestCode + ", resultCode = " + resultCode  + ", data = " + data.getStringExtra( "MESSAGE" ) );
         //! version-1
 //        super.onActivityResult( requestCode, resultCode, data );
         //? vérifier si le code de la demande est le même que celui qui est transmis ici, c'est-à-dire 2
