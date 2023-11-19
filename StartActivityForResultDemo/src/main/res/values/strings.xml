@@ -3,4 +3,9 @@
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
     <string name="title_activity_second">SecondActivity</string>
+    <string name = "default_message" >Message par défaut</string >
+    <string name = "get_message" >Obtenir un message</string >
+    <string name = "enter_message" >Saisir le message:</string >
+    <string name = "submit" >Soumettre</string >
+    <string name = "startsecondactivity" >StartSecondActivity</string >
 </resources >
